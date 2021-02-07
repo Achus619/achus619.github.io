@@ -32,7 +32,7 @@ body {
     background-position-y: 0%;
   }
   to {
-    background-position-y: -300vh;
+    background-position-y: -400vh;
   }
 }
 
@@ -114,34 +114,29 @@ body {
 }
 
 @keyframes caer {
-  10% {
+  30%,
+  40% {
     transform: translate(0, 60vh);
     height: 50px;
   }
 
-  15% {
-    transform: translate(80px, 60vh);
+  55% {
+    transform: translate(30vw, 60vh);
   }
-  25% {
-    transform: translate(250px, 60vh);
+  70% {
+    transform: translate(-20vw, 60vh);
   }
-
-  35% {
-    transform: translate(150px), 60vh;
+  85% {
+    transform: translate(10vw, 60vh);
   }
-  40% {
-    transform: translateY(60vh);
-  }
-  50% {
-    transform: translateY(40vh);
-  }
-  90% {
+  95% {
     height: 50px;
     opacity: 100%;
   }
   100% {
     height: 30px;
     opacity: 0%;
+    transform: translate(10vw, 20vh);
   }
 }
 
@@ -152,7 +147,7 @@ body {
 }
 
 .bienvenidx-subir {
-  animation: bienvenidx-subir 2s ease-out;
+  animation: bienvenidx-subir 1600ms ease-out;
   animation-delay: 8000ms;
   animation-fill-mode: forwards;
 }
