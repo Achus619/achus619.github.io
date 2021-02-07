@@ -61,17 +61,18 @@ body {
   }
 }
 
-#punto {
+.punto {
   display: inline-block;
   background: white;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  position: relative;
+  top: 300px;
+  position: absolute;
   cursor: pointer;
 }
 
-#punto::before {
+.punto::before {
   content: "";
   position: absolute;
   top: 0;
@@ -88,7 +89,7 @@ body {
 
 @keyframes pulso {
   from {
-    opacity: 0.8;
+    opacity: 0.15;
     transform: scale(0.9);
   }
   to {
@@ -97,8 +98,8 @@ body {
   }
 }
 
-#punto:hover,
-#punto:hover::before {
+.punto:hover,
+.punto:hover::before {
   transition-duration: 300ms;
   transition-property: background;
   background: rgb(32, 184, 255);
@@ -128,20 +129,49 @@ body {
   }
   85% {
     transform: translate(10vw, 60vh);
+    opacity: 100%;
   }
   95% {
     width: 30px;
     height: 50px;
-    opacity: 100%;
+    opacity: 10%;
     filter: blur(0);
   }
   100% {
     height: 80px;
     width: 80px;
-    filter: blur(40px);
+    filter: blur(20px);
     opacity: 0%;
     transform: translate(10vw, 20vh);
   }
+}
+
+.punto.dos {
+  animation-delay: 3ms;
+}
+.punto.tres {
+  animation-delay: 6ms;
+}
+.punto.cuatro {
+  animation-delay: 9ms;
+}
+.punto.cinco {
+  animation-delay: 12ms;
+}
+.punto.seis {
+  animation-delay: 15ms;
+}
+.punto.siete {
+  animation-delay: 18ms;
+}
+.punto.ocho {
+  animation-delay: 21ms;
+}
+.punto.nueve {
+  animation-delay: 21ms;
+}
+.punto.diez {
+  animation-delay: 21ms;
 }
 
 #bienvenidx {
