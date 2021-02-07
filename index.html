@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>holus</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="holis">Holis</h1>
+        <div id="punto" onClick="caer()"></div>
+        <h2 id="bienvenidx">bienvenidx :)</h2>
+        <script>
+            function caer() {
+                const holis = document.querySelector('#holis');
+                const body = document.querySelector('body');
+                const punto = document.querySelector('#punto');
+                const bienvenidx = document.querySelector('#bienvenidx');
+                if(!holis || !body) {
+                    console.log('no encontré los elementos');
+                    return ;
+                }
+                holis.classList.add('holis-subir');
+                body.classList.add('background-scroll');
+                punto.classList.add('punto-cayendo', 'ocultar-pulso');
+                bienvenidx.classList.add('bienvenidx-subir')
+            }
+          </script>
+    </body>
+</html>
