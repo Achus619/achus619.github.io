@@ -1,16 +1,7 @@
-@font-face {
-  font-family: "Baloo";
-  src: url("BalooBhaina2-Bold.ttf");
-}
-
-@font-face {
-  font-family: "BalooThin";
-  src: url("BalooBhaina2-Regular.ttf");
-}
-
 body {
   background-color: rgb(36, 36, 36);
   margin: 2em;
+  overflow: hidden;
   background-image: linear-gradient(
     20deg,
     #383737 33.33%,
@@ -22,7 +13,7 @@ body {
     #212121 100%
   );
   background-size: 175.43px 63.85px;
-  font-family: "Baloo";
+  font-family: "Baloo Bhai 2";
   font-weight: 800;
 }
 
@@ -43,8 +34,6 @@ body {
 
 #holis {
   color: white;
-  font-family: "Baloo";
-  font-weight: 800;
   font-size: 10em;
   display: inline-block;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
@@ -72,7 +61,8 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  top: 300px;
+  top: 280px;
+  margin-left: 0.5em;
   position: absolute;
   cursor: pointer;
 }
@@ -102,12 +92,13 @@ body {
     transform: scale(1.8);
   }
 }
-
-.punto:hover,
-.punto:hover::before {
-  transition-duration: 300ms;
-  transition-property: background;
-  background: rgb(32, 184, 255);
+@media (hover: hover) {
+  .punto:hover,
+  .punto:hover::before {
+    transition-duration: 300ms;
+    transition-property: background;
+    background: rgb(32, 184, 255);
+  }
 }
 
 .punto-cayendo {
@@ -192,12 +183,13 @@ body {
 
 #bienvenidx p {
   color: white;
-  font-family: "BalooThin";
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 #bienvenidx b {
-  font-family: "Baloo";
   color: rgb(32, 184, 255);
+  font-weight: 800;
 }
 
 #ten-pines {
