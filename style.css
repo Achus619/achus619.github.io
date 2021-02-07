@@ -130,11 +130,15 @@ body {
     transform: translate(10vw, 60vh);
   }
   95% {
+    width: 30px;
     height: 50px;
     opacity: 100%;
+    filter: blur(0);
   }
   100% {
-    height: 30px;
+    height: 80px;
+    width: 80px;
+    filter: blur(40px);
     opacity: 0%;
     transform: translate(10vw, 20vh);
   }
