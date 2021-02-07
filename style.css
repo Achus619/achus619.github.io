@@ -3,6 +3,11 @@
   src: url("BalooBhaina2-Bold.ttf");
 }
 
+@font-face {
+  font-family: "BalooThin";
+  src: url("BalooBhaina2-Regular.ttf");
+}
+
 body {
   background-color: rgb(36, 36, 36);
   margin: 2em;
@@ -140,7 +145,7 @@ body {
   100% {
     height: 80px;
     width: 80px;
-    filter: blur(20px);
+    filter: blur(30px);
     opacity: 0%;
     transform: translate(10vw, 20vh);
   }
@@ -178,6 +183,25 @@ body {
   position: absolute;
   bottom: -100px;
   color: rgb(32, 184, 255);
+  opacity: 0%;
+  border-radius: 1rem;
+  border: solid rgb(177, 177, 177);
+  background-color: rgb(177, 177, 177, 0.45);
+  padding: 0.5rem 2rem;
+}
+
+#bienvenidx p {
+  color: white;
+  font-family: "BalooThin";
+}
+
+#bienvenidx b {
+  font-family: "Baloo";
+  color: rgb(32, 184, 255);
+}
+
+#ten-pines {
+  color: #68bd44;
 }
 
 .bienvenidx-subir {
@@ -187,11 +211,8 @@ body {
 }
 
 @keyframes bienvenidx-subir {
-  from {
-    transform: translateY(0);
-  }
-
   to {
     transform: translateY(-300px);
+    opacity: 100%;
   }
 }
